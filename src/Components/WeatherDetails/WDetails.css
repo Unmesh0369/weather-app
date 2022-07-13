@@ -1,0 +1,53 @@
+.paper {
+  background-color: rgb(235, 243, 251) !important;
+  width: 600px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px -6px black !important;
+  margin-top: 20px;
+}
+
+.currentWeather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentTempIcon {
+  height: 100px;
+  width: 125px;
+}
+
+#h1Temp {
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 50px;
+}
+
+.todayText {
+  margin-top: 15px !important;
+  text-align: center;
+}
+
+.temp {
+  font-family: "Teko", sans-serif;
+  margin-left: 0;
+}
+
+.weatherDescription {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.futureWeather {
+  border: 2px solid white;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+}
+.futureDays {
+  justify-content: center;
+}
+.futureTemp {
+  justify-content: center;
+}
