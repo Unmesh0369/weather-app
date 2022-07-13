@@ -100,9 +100,6 @@ function BasicTabs() {
     <Box className='detailsWrapper'>
       <Box className='tabs'>
         <Tabs TabIndicatorProps={{style: {backgroundColor: "rgb(235,243,251)"}}} value={value} onChange={handleChange} aria-label="basic tabs example" centered>
-          {/* <Tab label="OTTAWA" value="OTTAWA"  />
-          <Tab label="MOSCOW" value="MOSCOW" />
-          <Tab label="TOKYO" value="TOKYO"  /> */}
           {tabsData.map((tabInfo) => (
   <Tab
     label={tabInfo.label} 
@@ -118,7 +115,6 @@ function BasicTabs() {
         <CircularProgress />
       </Box>
         }
-        {/* <WDetails data={data}/> */}
        </Box>
     </Box>
   );

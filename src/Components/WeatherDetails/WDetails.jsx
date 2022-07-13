@@ -66,7 +66,7 @@ function Temparature(props) {
 
 function TemparatureIcon(props) {
     console.log(props)
-  return <img src={`http://openweathermap.org/img/w/${props.iconId}.png`} className={props.size?'currentTempIcon':''}/>;
+  return <img src={`http://openweathermap.org/img/w/${props.iconId}.png`} alt='weather-icon' className={props.size?'currentTempIcon':''}/>;
 }
 
 function FutureWeather(props) {
