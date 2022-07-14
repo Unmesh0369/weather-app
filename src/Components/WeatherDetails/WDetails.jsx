@@ -31,7 +31,8 @@ const WDetails = (props) => {
 };
 
 const CurrentWeather=(props)=>{
-  const weather = props.prediction.weather[0];
+      
+  const weather = (props && props.prediction && props.prediction.weather.length > 0 && props.prediction.weather[0])?props.prediction.weather[0]:""
   return (
     <Grid
       container
