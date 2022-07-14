@@ -1,7 +1,5 @@
 .paper {
   background-color: rgb(235, 243, 251) !important;
-  /* width: 600px; */
-  /* width: 100%; */
   border: 2px solid white;
   border-radius: 5px;
   box-shadow: 0px 0px 15px -6px black !important;
@@ -15,8 +13,8 @@
 }
 
 .currentTempIcon {
-  height: 100px;
-  width: 125px;
+  height: 100%;
+  width: 100%;
 }
 
 #h1Temp {

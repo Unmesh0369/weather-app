@@ -41,10 +41,7 @@ function BasicTabs() {
   const [data,setData]= useState(null)
 
   const getEnvironmentData=(city)=>{
-    let data=fetchApi(city).then(res=>{
-        if(res.cod !=200){
-            return [];
-        }
+    fetchApi(city).then(res=>{
         const today = new Date(res.list[0].dt_txt);
 
         const result = res.list.reduce((result, val) => {
