@@ -48,7 +48,7 @@ const CurrentWeather=(props)=>{
       </Grid>
       <Grid item xs={3}>
         <h1 className="temp" id="h1Temp">
-          <Temparature temp={(props.prediction.main || {}).temp} />
+          <Temparature temp={(props && props.prediction && props.prediction.main ? props.prediction.main:"" || {}).temp} />
         </h1>
         <p className="weatherDescription">{weather.description}</p>
       </Grid>
@@ -78,7 +78,7 @@ const FutureWeather=(props)=>{
       data.main && (
         <Grid
           container
-          key={data.id}
+          key={data.dt}
           item
           xs={3}
           className="futureWeather"
