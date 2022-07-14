@@ -5,7 +5,6 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import fetchApi from '../../Env';
-import { createContext } from 'react';
 import WDetails from '../WeatherDetails/WDetails';
 import CircularProgress from '@mui/material/CircularProgress';
 
@@ -35,8 +34,6 @@ TabPanel.propTypes = {
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
 };
-
-const Context = createContext('');
 
 function BasicTabs() {
   

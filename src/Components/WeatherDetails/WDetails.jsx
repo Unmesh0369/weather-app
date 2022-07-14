@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Moment from "react-moment";
 import "moment-timezone";
 import "./WDetails.css";
+import React from "react";
 
 const WDetails = (props) => {
   console.log(props.data);
@@ -29,14 +30,14 @@ const WDetails = (props) => {
   );
 };
 
-function CurrentWeather(props) {
+const CurrentWeather=(props)=>{
   const weather = props.prediction.weather[0];
   return (
     <Grid
       container
       className="currentWeather"
       item
-      xs={8}
+      xs={10}
     >
       <Grid item xs={12} className="todayText" >
         <Typography>Today</Typography>
@@ -54,7 +55,7 @@ function CurrentWeather(props) {
   );
 }
 
-function Temparature(props) {
+const Temparature=(props)=>{
   console.log(props);
   return (
     <span className="temp">
@@ -64,12 +65,12 @@ function Temparature(props) {
   );
 }
 
-function TemparatureIcon(props) {
+const TemparatureIcon=(props)=>{
     console.log(props)
   return <img src={`http://openweathermap.org/img/w/${props.iconId}.png`} alt='weather-icon' className={props.size?'currentTempIcon':''}/>;
 }
 
-function FutureWeather(props) {
+const FutureWeather=(props)=>{
     console.log(props.prediction)
   return props.prediction.slice(1).map(
     (data) =>
