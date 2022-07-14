@@ -7,7 +7,6 @@ import "./WDetails.css";
 import React from "react";
 
 const WDetails = (props) => {
-  console.log(props.data);
   return (
     <Paper square className="paper">
       <Grid item container>
@@ -48,7 +47,7 @@ const CurrentWeather=(props)=>{
       </Grid>
       <Grid item xs={3}>
         <h1 className="temp" id="h1Temp">
-          <Temparature temp={(props && props.prediction && props.prediction.main ? props.prediction.main:"" || {}).temp} />
+          <Temparature temp={(props && props.prediction && props.prediction.main ? props.prediction.main:"").temp} />
         </h1>
         <p className="weatherDescription">{weather.description}</p>
       </Grid>
@@ -57,7 +56,6 @@ const CurrentWeather=(props)=>{
 }
 
 const Temparature=(props)=>{
-  console.log(props);
   return (
     <span className="temp">
       {Math.round(props.temp)}
@@ -67,12 +65,10 @@ const Temparature=(props)=>{
 }
 
 const TemparatureIcon=(props)=>{
-    console.log(props)
   return <img src={`http://openweathermap.org/img/w/${props.iconId}.png`} alt='weather-icon' className={props.size?'currentTempIcon':''}/>;
 }
 
 const FutureWeather=(props)=>{
-    console.log(props.prediction)
   return props.prediction.slice(1).map(
     (data) =>
       data.main && (
